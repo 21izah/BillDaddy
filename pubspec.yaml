@@ -1,0 +1,203 @@
+name: billdaddy
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.2
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  smooth_page_indicator: ^1.2.0+3
+  page_transition: ^2.1.0
+  flutter_countdown_timer: ^4.1.0
+  flutter_svg: ^2.0.10+1
+  # shared_preferences: ^2.1.2
+  # hive: ^2.0.5
+  # hive_flutter: ^1.1.0
+  lottie: ^3.1.2
+  pdf: ^3.11.1
+  share_plus: ^10.0.3
+  printing: ^5.13.3
+  dropdown_button2: ^2.0.0
+  dotted_border: ^2.0.0
+  # percent_indicator: ^4.2.3
+  readmore: ^3.0.0
+  timeline_tile: ^2.0.0
+  flutter_screenutil: ^5.9.3
+  scroll_to_hide: ^2.1.0
+  percent_indicator: ^4.2.4
+  intl: ^0.18.0 
+
+  dio: ^5.7.0
+
+  clipboard: ^0.1.3
+
+  connectivity_plus: ^6.1.2
+  # internet_connection_checker: ^3.0.1
+  # go_router: ^14.6.3
+
+
+  http: ^1.3.0
+  top_snackbar_flutter: ^3.1.0
+  device_info_plus: ^11.2.2
+  get: ^4.7.2
+  get_storage: ^2.1.1
+  # firebase_core: ^3.10.1
+  # firebase_messaging: ^15.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # hive_generator: ^1.1.0
+  build_runner: ^2.1.5
+  flutter_launcher_icons: ^0.14.1
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - lib/assets/Group1logo.png
+    - lib/assets/Group4023splash01.png
+    - lib/assets/Group4022splash02.png
+    - lib/assets/refer&earn01.png
+
+    - lib/assets/card_search.png
+    - lib/assets/pos_img.png
+    - lib/assets/success01.png
+    - lib/assets/woodHand.png
+    - lib/assets/phone02.png
+    - lib/assets/phone01.png
+    - lib/assets/Backgroundback01.png
+    - lib/assets/addmoney.png
+    - lib/assets/betting.png
+    - lib/assets/cards01.png
+    - lib/assets/data.png
+    - lib/assets/diamond.png
+    - lib/assets/electricity.png
+    - lib/assets/giftcards01.png
+    - lib/assets/home.png
+    - lib/assets/internet.png
+    - lib/assets/invest01.png
+    - lib/assets/mesmile.png
+    - lib/assets/more.png
+    - lib/assets/ngnnaira.png
+    - lib/assets/nigeria.png
+    - lib/assets/notification.png
+    - lib/assets/payment02.png
+    - lib/assets/person.png
+    - lib/assets/plug01.png
+    - lib/assets/scan.png
+    - lib/assets/transfer.png
+    - lib/assets/tv01.png
+    - lib/assets/withdraw.png
+    - lib/assets/airtime.png
+    - lib/assets/sim.png
+    - lib/assets/verve.png
+    - lib/assets/card-sendcard.svg
+    - lib/assets/notificatoin.svg
+    - lib/assets/scan01.svg
+    - lib/assets/diamond.svg
+    - lib/assets/addMoney.svg
+    - lib/assets/ngnnaira.svg
+    - lib/assets/transfer.svg
+    - lib/assets/withdraw.svg
+    - lib/assets/
+    - lib/assets/solar_arrow-up-broken.svg
+    - lib/assets/electricityBenefit.svg
+    - lib/assets/checkAnimation.json
+    - lib/assets/fingerPrint.svg
+    - lib/assets/mtn.png
+    - lib/assets/glo.png
+    - lib/assets/airtel.png
+    - lib/assets/mtn.svg
+    - lib/assets/NigeriaCircular.svg
+    - lib/assets/location01.svg
+    - lib/assets/location02.png
+    - lib/assets/check23.svg
+    - lib/assets/close_icon.svg
+    - lib/assets/requestAcard.svg
+    - lib/assets/vright_arrow.svg
+    - lib/assets/mastercard.svg
+    - lib/assets/visa.svg
+    - lib/assets/verve.svg
+    - lib/assets/volume.svg
+
+    - lib/assets/Tv03.png
+    - lib/assets/electricity03.png
+    - lib/assets/betting03.png
+    - lib/assets/Or.png
+    - lib/assets/giftcard03.png
+    - lib/assets/internet03.png
+    - lib/assets/productShopping.png
+    - lib/assets/fonts/Roboto-Regular.ttf
+    - lib/assets/fonts/Roboto-Bold.ttf
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
