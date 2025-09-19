@@ -16,8 +16,7 @@ class TransferToEgofinaceScreen extends StatefulWidget {
   });
 
   @override
-  State<TransferToEgofinaceScreen> createState() =>
-      _TransferToEgofinaceScreenState();
+  State<TransferToEgofinaceScreen> createState() => _TransferToEgofinaceScreenState();
 }
 
 class _TransferToEgofinaceScreenState extends State<TransferToEgofinaceScreen> {
@@ -60,8 +59,7 @@ class _TransferToEgofinaceScreenState extends State<TransferToEgofinaceScreen> {
                       width: 40,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(200),
-                          color: Colors.primaries[
-                              Random().nextInt(Colors.primaries.length)]),
+                          color: Colors.primaries[Random().nextInt(Colors.primaries.length)]),
                       child: Center(
                           child: Text(
                         'E',
@@ -90,12 +88,12 @@ class _TransferToEgofinaceScreenState extends State<TransferToEgofinaceScreen> {
                     children: [
                       w400_17(
                         context,
-                        '${widget.bankName}',
+                        widget.bankName,
                         blackColor,
                       ),
                       w400_17(
                         context,
-                        '${widget.bankAccount}',
+                        widget.bankAccount,
                         blackColor,
                       ),
                     ],
@@ -126,8 +124,7 @@ class _TransferToEgofinaceScreenState extends State<TransferToEgofinaceScreen> {
                     cursorColor: secondaryColor,
                     keyboardType: TextInputType.number,
                     controller: _amountController,
-                    validator: (value) =>
-                        value!.isEmpty ? 'Amount is required' : null,
+                    validator: (value) => value!.isEmpty ? 'Amount is required' : null,
                     decoration: InputDecoration(
                       prefixIcon: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -188,8 +185,7 @@ class _TransferToEgofinaceScreenState extends State<TransferToEgofinaceScreen> {
                     cursorColor: secondaryColor,
                     keyboardType: TextInputType.text,
                     controller: _remarkController,
-                    validator: (value) =>
-                        value!.isEmpty ? 'Remark is required' : null,
+                    validator: (value) => value!.isEmpty ? 'Remark is required' : null,
                     decoration: InputDecoration(
                       label: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
